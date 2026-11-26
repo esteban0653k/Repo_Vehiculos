@@ -25,7 +25,7 @@ services:
       - red_api
 
   db:
-    image: postgres:15-alpine
+    image: db
     container_name: postgres_container
     environment:
       POSTGRES_DB: vehiculo_app
@@ -52,7 +52,7 @@ services:
       - red_api
 
 volumes:
-  pgdata_camuad:
+  pgdata_vehiculo:
   vendor_data:
 
 networks:
